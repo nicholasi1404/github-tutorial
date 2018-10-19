@@ -12,10 +12,11 @@ To make a **Github** account, you will need to :
 1. Go to [Github](https://github.com/join?source=header-home) and sign up with your email, username, and password. It would look something like this -> 
 2. Then click *continue* and choose the free plan. (Unless you want to pay the $7/month) ->
 3. Next you can complete the quick survey to "tailor your experience". However, if you don't want to do it you can skip this step. ->
-(add images for these)
+(add images for these) (finish the final step) 
 
 ---
 ## Repository Setup
+
 
 
 
