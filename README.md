@@ -18,7 +18,7 @@ Next you will need to set up your SSH Key. You can find it in c9.io/Yourusername
 
 ---
 ## Repository Setup
-When you setup your repository,  you will need to have _Git_ initialized in order for it to work. This would look like `git init` . However, do not use this in your ~/workspace ! If you do by accident use `git init` where you didn't want to, you just need to type ```rm -rf .git``` To make a new **Github** repository, click "New Repository" and then name it and then create it. 
+When you setup your repository,  you will need to have _Git_ initialized in order for it to work. This would look like `git init` . However, do not use this in your ~/workspace ! If you do by accident use `git init` where you didn't want to, you just need to type ```rm -rf .git``` and then re-initialize git where you wanted it to be. Now, to make a new **Github** repository, click "New Repository" and then name it and then create it. 
 ### Forking a Repository
 To Fork and clone a repository, go to the repository that you plan on forking and then select Fork. It looks like a stethoscope. From there you can clone with SSH and copy and paste the new link into your command line (cloud 9). You will need to use `git clone` and then paste the link that should have your username in it, NOT the username of the original person (unless you only want to Fork the repo).
 
