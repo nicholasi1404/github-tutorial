@@ -9,21 +9,30 @@ The difference between _Git_ and **Github** is that _Git_ is a file manager and 
 ---
 ## Initial Setup
 To make a **Github** account, you will need to :
-1. Go to [Github](https://github.com/join?source=header-home) and sign up with your email, username, and password. It would look something like this -> 
-2. Then click *continue* and choose the free plan. (Unless you want to pay the $7/month) ->
-3. Next you can complete the quick survey to "tailor your experience". However, if you don't want to do it you can skip this step. ->
-(add images for these) (finish the final step) 
+1. Go to [Github](https://github.com/join?source=header-home) and sign up with your email, username, and password. 
+2. Then click *continue* and choose the free plan. (Unless you want to pay the $7/month for extra stuff) 
+3. Next you can complete the quick survey to "tailor your experience". However, if you don't want to do it you can skip this step. 
+4. Yay you made a **Github** account!!!
+
+Next you will need to set up your SSH Key. You can find it in c9.io/Yourusername > Gear Icon > SSH Keys > Then use the first SSH key
 
 ---
 ## Repository Setup
+When you setup your repository,  you will need to have _Git_ initialized in order for it to work. This would look like `git init` . However, do not use this in your ~/workspace ! If you do by accident use `git init` where you didn't want to, you just need to type ```rm -rf .git``` To make a new **Github** repository, click "New Repository" and then name it and then create it. 
+### Forking a Repository
+To Fork and clone a repository, go to the repository that you plan on forking and then select Fork. It looks like a stethoscope. From there you can clone with SSH and copy and paste the new link into your command line (cloud 9). You will need to use `git clone` and then paste the link that should have your username in it, NOT the username of the original person (unless you only want to Fork the repo).
 
 
 
 
 ---
 ## Workflow & Commands
-
-
+Lets Recap! The commands you will be constantly using are :
+- `git add .`   = this is how you add files to the stage. It gets prepared for the snapshot / commit
+- `git commit -m`  = this is how you will commit the file. You will add a commit message afterwards so you know what you have edited.
+- `git push`    = this is how you send your changes to the **Github** remote where you can share it with other people.
+- `git status` *  = this is a command you will use as much as the ones above. It will tell you what is happening in the working directory and stage area. Then you can see the changes that have been staged or not. It can also tell you if _Git_ sees what is going on.
 
 ---
 ## Rolling Back Changes
+There will be a lot of times where you make mistakes but don't worry, there are ways to revert these mistakes. If you want to undo a commit all you have to do is `git reset HEAD~` this will undo the latest commit you have made. The changes will be there but will not commited. You can check this by using `git status` . From there, if you want to undo a change you've made but not added or commited yet, you can use _command z_.
