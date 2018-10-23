@@ -38,7 +38,6 @@ Lets Recap! The commands you will be constantly using are :
 - `git commit -m`  = this is how you will commit the file. You will add a commit message afterwards so you know what you have edited.
 - `git push`    = this is how you send your changes to the **Github** remote where you can share it with other people.
 - `git status` *  = this is a command you will use as much as the ones above. It will tell you what is happening in the working directory and stage area. Then you can see the changes that have been staged or not. It can also tell you if _Git_ sees what is going on.
-<<<<<<< HEAD
 
 ---
 ## Rolling Back Changes
@@ -47,7 +46,6 @@ There will be a lot of times where you make mistakes but don't worry, there are 
 If you want to undo a commit, run `git reset HEAD~`. It will undo the previous commit and will unstage the files that were added on the stage. However, any changes that you have made in the files will be kept intact.
 
 You can check this by running `git status`. You should see that your branch is behind `x` commits. If you want to undo all the changes from the files after you have ran `git reset HEAD~`, run `git checkout -- FILENAME | .` to discard changes for one file with changes or all files with changes.
-=======
 
 ---
 ## Rolling Back Changes
