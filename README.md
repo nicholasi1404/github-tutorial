@@ -14,7 +14,13 @@ To make a **Github** account, you will need to :
 3. Next you can complete the quick survey to "tailor your experience". However, if you don't want to do it you can skip this step. 
 4. Yay you made a **Github** account!!!
 
-Next you will need to set up your SSH Key. You can find it in c9.io/Yourusername > Gear Icon > SSH Keys > Then use the first SSH key
+Next you will need to set up your SSH Key.
+
+You can find it in c9.io/Yourusername > Gear Icon > SSH Keys > Then copy the first SSH key, and hop over to [here](https://github.com/settings/keys) assuming you are already logged in.
+
+Now click on *New SSH Key* and enter a title and then paste in your copied SSH key from Cloud9.
+
+After that, press *Add SSH Key*, and you have successfully established an SSH connection between Cloud9 and your GitHub account.
 
 ---
 ## Repository Setup
