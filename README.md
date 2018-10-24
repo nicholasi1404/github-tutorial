@@ -14,7 +14,13 @@ To make a **Github** account, you will need to :
 3. Next you can complete the quick survey to "tailor your experience". However, if you don't want to do it you can skip this step. 
 4. Yay you made a **Github** account!!!
 
-Next you will need to set up your SSH Key. You can find it in c9.io/Yourusername > Gear Icon > SSH Keys > Then use the first SSH key
+Next you will need to set up your SSH Key.
+
+You can find it in c9.io/Yourusername > Gear Icon > SSH Keys > Then copy the first SSH key, and hop over to [here](https://github.com/settings/keys) assuming you are already logged in.
+
+Now click on *New SSH Key* and enter a title and then paste in your copied SSH key from Cloud9.
+
+After that, press *Add SSH Key*, and you have successfully established an SSH connection between Cloud9 and your GitHub account.
 
 ---
 ## Repository Setup
@@ -32,6 +38,14 @@ Lets Recap! The commands you will be constantly using are :
 - `git commit -m`  = this is how you will commit the file. You will add a commit message afterwards so you know what you have edited.
 - `git push`    = this is how you send your changes to the **Github** remote where you can share it with other people.
 - `git status` *  = this is a command you will use as much as the ones above. It will tell you what is happening in the working directory and stage area. Then you can see the changes that have been staged or not. It can also tell you if _Git_ sees what is going on.
+
+---
+## Rolling Back Changes
+There will be a lot of times where you make mistakes but don't worry, there are ways to revert these mistakes.
+
+If you want to undo a commit, run `git reset HEAD~`. It will undo the previous commit and will unstage the files that were added on the stage. However, any changes that you have made in the files will be kept intact.
+
+You can check this by running `git status`. You should see that your branch is behind `x` commits. If you want to undo all the changes from the files after you have ran `git reset HEAD~`, run `git checkout -- FILENAME | .` to discard changes for one file with changes or all files with changes.
 
 ---
 ## Rolling Back Changes
